@@ -1,0 +1,20 @@
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.submenu {
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.submenu li {
+  font-size: 14px;
+  color: #ddd;
+}
