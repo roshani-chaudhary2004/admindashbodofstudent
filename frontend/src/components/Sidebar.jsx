@@ -1,5 +1,8 @@
+
+
+
 import { useState } from "react";
-import { Link } from "react-router-dom"; // ✅ Import Link
+import { Link } from "react-router-dom";
 import "./Sidebar.css";
 
 function Sidebar({ show }) {
@@ -17,19 +20,18 @@ function Sidebar({ show }) {
 
         {openDashboard && (
           <ul className="submenu">
-            <li><Link to="/challan">🧾 Challan</Link></li> {/* ✅ FIXED */}
-            <li><Link to="/idcard">🆔 ID Card</Link></li> {/* Optional */}
-            <li><Link to="/projectlist">📂 Project List</Link></li> {/* Optional */}
+            <li><Link to="/challan"style={{ color: "red", textDecoration: "none",backgroundColor:"yellow" }}>🧾 Challan</Link></li>
+            <li><Link to="/idcard"style={{ color: "red", textDecoration: "none",backgroundColor:"yellow" }}>🆔 ID Card</Link></li> {/* ✅ Clickable */}
+            <li><Link to="/projectlist"style={{ color: "red", textDecoration: "none",backgroundColor:"yellow" }}>📂 Project List</Link></li>
           </ul>
         )}
 
         <li>👥 Manage Students</li>
-        <li>📊 Manage Results</li>
-        <li>💰 Manage Fees</li>
-        <li>📅 Manage Batches</li>
-        <li>📄 Reports</li>
-        <li>⚙ Settings</li>
-        <li>🚪 Logout</li>
+        
+  
+        <li>📄 CERTIFICATES</li>
+        
+        <li>🚪 Log</li>
       </ul>
     </aside>
   );

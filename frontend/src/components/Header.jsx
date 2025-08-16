@@ -1,8 +1,17 @@
 function Header() {
   return (
-    <header className="header">
-      <h1>Admin Panel - STC Summer Training</h1>
-      <button className="logout-btn">Logout?</button>
+    <header className="header"
+    style={{
+        display: "flex",
+        justifyContent: "center", // horizontal center
+        alignItems: "center" ,     // vertical center
+        color:" black",
+    
+      }}
+    >
+      <h1 style={{ textAlign: "center" }}>
+Admin Panel - STC Summer Training</h1>
+      
     </header>
   );
 }
